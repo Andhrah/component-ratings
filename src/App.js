@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import Star from './components/Star';
+import Rating from './components/Rating';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>A Star component on its own:</h2>
+      <Star color="purple" />
+      <Star color="pink" isFilled />
+      <Star color="magenta" />
+      <Star color="indigo" isFilled />
+      <h2>Rating Components:</h2>
+      {/* <Rating stars={5} />
+      <Rating stars={3} /> */}
     </div>
   );
 }
